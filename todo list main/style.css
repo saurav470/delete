@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.parent-container{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(450px,600px));
+    grid-auto-rows: auto;
+    justify-content: center;
+}
+
+.container{
+    border: 1px solid red;
+    margin: 10px;
+    background-color: #D2DAFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-adder{
+    align-self: center;
+    margin-top: 10px;
+    display: flex;
+}
+.item-adder input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    background-color: #dee3f7;
+    padding: 7px;
+    font-size: 1.10rem;
+    font-weight: 500;
+}
+.item-adder button{
+    padding: .25rem;
+    width: 90px;
+    font-size: 1.25rem;
+    margin-left: 10px;
+}
+.list{
+    margin-top: 10px;
+    color: rgb(54, 52, 52);
+    padding-left: 0px;
+    margin-left: 10px;
+}
+.list li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    
+}
+.list div{
+    height: 18px;
+    width: 18px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+    margin-right: 20px;
+    margin-left:7px ;
+}
+.list li h1{
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.list li button{
+    margin-left: 63%;
+    margin-right: 30px;
+}
